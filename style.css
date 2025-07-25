@@ -166,11 +166,116 @@ main > section{
     font-size: 1.4rem;
 }
 /* Discount section style */
-.discount-container{
+.discount{
     margin-top: 120px;
-    display: flex;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    gap: 30px;
+    
 }
+.discount-container{
+    
+
+}
+.discount-img1{
+    width: 365px;
+    height: 205px;
+    position: relative;
+    
+}
+.img-position, .img-position2{
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    
+}
+.img-position h5{
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.img-position a{
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.discount-img2{
+    width: 750px;
+    height: 420px;
+    position: relative;
+}
+.img-position2 h2{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.img-position2 a{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+/* background image style */
+.bg-img{
+    max-width: 1440px;
+    height: 530px;
+    background-image: url(./assets/news-letter-bg.png);
+    
+      justify-content: center;
+      align-items: center;
+      
+      text-align: center;
+      
+}
+.bg-img h2{
+    color: #FFFFFF;
+    font-size: 3.1rem;
+    font-weight: bold;
+}
+.email{
+    padding: 10px 200px;
+}
+.email::placeholder{
+    text-align: left;
+}
+.button{
+    background-color: #E95A08;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    border: none;
+}
+
+/* footer style */
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.footer-links {
+    display: flex;
+    gap: 80px;
+    margin-right: 40px;
+}
+.footer-links .column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-links .column ul li {
+    margin-bottom: 30px;
+}
+.footer-links .column ul li a {
+    text-decoration: none;
+    color: #5d6d7e;
+    font-size: 1.4rem;
+}
+.footer-social img{
+    margin-right: 20px;
+}
+
+
  
 
 /* responsive style */
@@ -181,8 +286,12 @@ main > section{
     .hero-section, 
     .plants-container, 
     .loves,
-    .discount-container {
+    .discount-container,
+    .footer-container,
+    .footer-links {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
     .hero-section-right img{
         width: 100%;
@@ -193,5 +302,11 @@ main > section{
     .loves{
         text-align: center;
         gap: 30px;
+    }
+    .footer-left {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 40px; /* Add space below logo/text */
+        width: 100%; /* Take full width */
+        min-width: unset; /* Remove min-width constraint */
     }
 }
