@@ -156,9 +156,21 @@ main > section{
 /********** latest Deals style****** */
 .latest{
      text-align: center;
-     
+     margin-top: 130px;
 }
-
+.latest h2{
+    font-size: 3.2rem;
+     font-weight: 700;
+}
+.latest p{
+    font-size: 1.4rem;
+}
+/* Discount section style */
+.discount-container{
+    margin-top: 120px;
+    display: flex;
+    gap: 20px;
+}
  
 
 /* responsive style */
@@ -166,7 +178,10 @@ main > section{
     .nav-menu{
         display: none;
     }
-    .hero-section, .plants-container, .loves {
+    .hero-section, 
+    .plants-container, 
+    .loves,
+    .discount-container {
         flex-direction: column;
     }
     .hero-section-right img{
