@@ -87,7 +87,6 @@ main > section{
 .flowers-container{
     display:grid;
     grid-template-columns: repeat(4,1fr);
-    /* grid-template-rows: repeat(2,1fr) */
     gap: 20px;
 
 }
@@ -98,12 +97,7 @@ main > section{
     gap: 15px;
     text-align: center;
 }
-/* .flowers-card img{
-    width: 270px;
-}
-.card-body{
-    gap: 30px;
-} */
+
 .card-title{
     display: flex;
     flex-direction: column;
@@ -137,9 +131,7 @@ main > section{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 60px 20px;  */
      gap: 20px;  
-     /* flex-wrap: wrap;*/
      flex-direction: column;
      margin-left: 50px; 
 }
@@ -299,14 +291,18 @@ main > section{
     .flowers-container{
         grid-template-columns: repeat(2,1fr);
     }
+    .discount{
+        grid-template-columns: repeat(1,1fr);
+       
+    }
     .loves{
         text-align: center;
         gap: 30px;
     }
     .footer-left {
-        margin-right: 0; /* Remove right margin */
-        margin-bottom: 40px; /* Add space below logo/text */
-        width: 100%; /* Take full width */
-        min-width: unset; /* Remove min-width constraint */
+        margin-right: 0; 
+        margin-bottom: 40px; 
+        width: 100%; 
+        min-width: unset; 
     }
 }
