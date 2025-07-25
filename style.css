@@ -5,7 +5,7 @@
   margin: 0;
 }
 main > section{
-    margin-top: 1200px; 
+    margin-top: 120px; 
 }
 .main-container{
     max-width: 1140px;
@@ -30,9 +30,13 @@ main > section{
 
 
 /* header Nav Style */
-.nav{
+.main-nav{
+    
+}
+ .nav{
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
+
 }
 .nav-item{
     list-style:none;
@@ -46,6 +50,7 @@ main > section{
 .hero-section{
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
     margin-top: 120px;
 }
 .hero-section-left h2{
@@ -58,7 +63,7 @@ main > section{
     margin-top: 90px;
 }
 .hero-section-description{
-    width: 570px;
+    /* width: 570px; */
     font-size: 1.4rem;
 }
 /*  Our plants section style */
@@ -87,16 +92,22 @@ main > section{
 
 }
 .flowers-card{
-     margin-top: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
 }
-.flowers-card img{
+/* .flowers-card img{
     width: 270px;
 }
 .card-body{
     gap: 30px;
-}
+} */
 .card-title{
-    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 .card-title h5{
     font-size: 1.4rem;
@@ -112,4 +123,60 @@ main > section{
     background-color: #E95A08;
     padding: 20px 90px;
     border: none;
+}
+/* flowers & plants section style */
+.loves{
+    margin-top: 210px;
+    display: flex;
+}
+.flower-plants-left img{
+    width: 440px;
+    height: 300px;
+}
+.flower-plants-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 60px 20px;  */
+     gap: 20px;  
+     /* flex-wrap: wrap;*/
+     flex-direction: column;
+     margin-left: 50px; 
+}
+.flower-plants-right h2{
+    font-size: 3.2rem;
+    font-weight: 700;
+    width: 540px;
+    height: 100px;
+}
+.flower-plants-right li{
+    font-size: 1.2rem;
+
+}
+/********** latest Deals style****** */
+.latest{
+     text-align: center;
+     
+}
+
+ 
+
+/* responsive style */
+@media screen and (max-width:600px) {
+    .nav-menu{
+        display: none;
+    }
+    .hero-section, .plants-container, .loves {
+        flex-direction: column;
+    }
+    .hero-section-right img{
+        width: 100%;
+    }
+    .flowers-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .loves{
+        text-align: center;
+        gap: 30px;
+    }
 }

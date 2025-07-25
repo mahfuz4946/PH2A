@@ -9,31 +9,37 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
-        <nav class="nav display-flex main-container">
+    <header class="nav display-flex main-container">
+        <!-- <nav class="nav display-flex main-container"> -->
             <div>
                 <img src="./assets/logo.png" alt="Website Logo">
             </div>
-            <div class="menu-item">
-                <ul class="link-ul display-flex">
+            <!-- <div class="menu-item"> -->
+                <nav class=" nav display-flex">
+                    <div class="nav-menu">
+                    <ul class="link-ul display-flex">
                     <li class="nav-item"><a class="nav-link color1" href="">Home</a></li>
                     <li class="nav-item"><a class="nav-link color2" href="">Shop</a></li>
                     <li class="nav-item"><a class="nav-link color2" href="">About us </a></li>
-                    <li class="nav-item"><a class="nav-link color1" href=""><i class="fa-solid fa-cart-flatbed"></i> Cart ($56)</a></li>
-                </ul>
-            </div>
+                    </ul>
+                    </div>
+                <!-- </nav> -->
+                    <div class="cart">
+                        <li class="nav-item"><a class="nav-link color1" href=""><i class="fa-solid fa-cart-flatbed"></i> Cart ($56)</a></li>
+                    </div>
+            <!-- </div> -->
         </nav>
     </header>
     <main>
         <!-- always fresh flowers section -->
         <section class="hero-section main-container">
+            <div class="hero-section-right">
+               <img src="./assets/hero-flower.png" alt="Hero Flower">
+            </div>
             <div class="hero-section-left">
                <h2><span class="color3">ALWAYS</span> <span class="color4">FRESH</span></h2>
                <h2 class="color4">FLOWERS</h2>
                <p class="hero-section-description color2">Indulge your senses with the beauty and fragrance of  our fresh flower shop. From classic roses to exotic looms, we offer a wide variety of fresh flowers that  are perfect for any occasion.</p>
-            </div>
-            <div class="hero-section-right">
-               <img src="./assets/hero-flower.png" alt="Hero Flower">
             </div>
         </section>
         
@@ -110,6 +116,26 @@
             </div>
             </div>
          </section>
+
+         <!-- Flower & Plants section -->
+          <section class="loves main-container">
+            <div class="flower-plants-left ">
+                <img src="./assets/flower-store.png" alt="">
+            </div>
+            <div class="flower-plants-right">
+                <h2>Flower & Plants <br> Lover</h2>
+                <!-- <ul> -->
+                    <li class="color2">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+                    <li class="color2">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+                    <li class="color2">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+                 <!-- </ul> -->
+            </div>
+          </section>
+          <!-- latest deals -->
+           <div class="latest">
+               <h2><span class="color4">Latest </span> <span class="color3">Deals</span></h2>
+               <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+           </div>
     </main>
     <footer></footer>
 </body>
